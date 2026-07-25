@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Index Taxi</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/bootstrap.css" rel="stylesheet">
+     <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+<script type="text/javascript" src="js/reservation.js"></script>
+       <link href="css/daterangepicker-bs2.css" rel="stylesheet">
+      <script type="text/javascript" src="js/moment.js"></script>
+      <script type="text/javascript" src="js/daterangepicker.js"></script>
+   
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    
+</head>
+
+<body>
+ 
+<div class="container">
+ <div class="col-md-3"><img class="img-responsive" src="images/logo.png"></div>
+ 
+  <div class="col-md-3" align="center">
+    <a href=""><img  class="img-responsive" src="images/booknow.png"></a>
+  </div>
+  <div class="col-md-3"><img class="img-responsive" src="images/banner2.png">
+  
+  </div>
+  <p>
+   <div class="col-md-3" align="center">
+    <button class="btn btn-info btn-sm lead" style="color:#F8F3F3;"><p> <i class="fa fa-phone fa-3x gly-spin"></i></p>&nbsp; Call Back</button>
+        
+    <button class="btn btn-info btn-sm gly-spin1" data-toggle="modal" data-target="#myModal" style="color:#F8F3F3;"><p><i class="fa fa-user fa-3x  "></i> </p>&nbsp;Login / Register</button>
+   
+   </div>
+</div>
+<!--=== Login/Register modal start=== -->
+<script>$('#myModal').modal('show');</script>  
+ <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="background:#f09401;">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;</button>
+                <h4 class="modal-title" id="myModalLabel">
+                    LOGIN/REGISTER <a href="#"> </a></h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
+                            <li><a href="#Register" data-toggle="tab">Register</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="Login">
+                                <form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="email" class="col-sm-2 control-label">
+                                        Username</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="email1" placeholder="username" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1" class="col-sm-2 control-label">
+                                        Password</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="exampleInputPassword1" placeholder="password" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                    </div>
+                                    <div class="col-sm-10">
+   <button type="submit" class="btn btn-info "><a href="user_login/user_login.html">Login</a></button>
+                                        <a href="javascript:;">Forgot your password?</a>
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane" id="Register">
+                                <form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="email" class="col-sm-2 control-label">
+                                        Name</label>
+                                    <div class="col-sm-10">
+                                        <div class="row">
+                                     
+                                            <div class="col-md-12">
+                                                <input type="text" class="form-control" placeholder="Name" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="col-sm-2 control-label">
+                                        Email</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="email" placeholder="Email" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="mobile" class="col-sm-2 control-label">
+                                        Mobile</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="mobile" placeholder="Mobile" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="col-sm-2 control-label">
+                                        Password</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control" id="password" placeholder="Password" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="col-sm-2 control-label">
+                                      Confirm Password</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control" id="password" placeholder="confirm  Password" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <button type="button" class="btn btn-info ">
+                                            Save & Continue</button>
+                                        <button type="button" class="btn btn-danger btn-sm">
+                                            Cancel</button>
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
+                              <div class="skyline-fade img-responsive ">
+        <div class="skyline-1">
+            <span class="clouds-1"></span>
+             
+                <span class="clouds-2"></span>
+                <span class="car car--van"></span>
+                 <span class="car car--bronco"></span>
+                <span class="car car--car"></span>
+                   
+               </div>
+             </div> 
+                        </div>                        
+                    </div>                    
+                </div>               
+            </div>
+        </div>
+    </div>
+</div>
+ <!--=== Login/Register modal end=== --> 
+    
+    
+   <br>
+    <div class="container">
+     <div class="col-md-4" >
+            <form action="" class="search-form">
+                <div class="form-group has-feedback">
+            		 <div class="input-group">
+      <input type="text" class="form-control" placeholder="SEARCH LOCATION">
+      <span class="input-group-btn" >
+        <button class="btn btn-info glyphicon glyphicon-search " type="button" style="color:#fff;"></button>
+      </span>
+    </div><!-- /input-group --> 
+        </div>
+            </form>
+        </div> 
+           
+          <div class="col-md-6">
+          <ol class="breadcrumb">
+  <li><a href="#">CHANDIGARH</a></li>
+  <li><a href="#">DELHI</a></li>
+  <li><a href="#">PUNJAB</a></li>
+   <li><a href="#">HARYANA</a></li>
+    <li><a href="#">HIMACHAL</a></li>
+</ol>  
+          </div>    
+    </div>
+    <div class="well">
+<div class="container">
+    <!--============search panel===================---->
+    
+             
+            <div class="col-md-8 " style="color:#FFFFFF;">
+                <div class="panel panel-default">
+               
+                   <ul class="nav nav-tabs nav-pills">
+                <li class="active"><a href="#point" data-toggle="tab"><i class="glyphicon glyphicon-star "></i><b> POINT TO POINT</b></a></li>
+                <li><a href="#airport" data-toggle="tab"><i class="glyphicon glyphicon-plane "></i><b> AIRPORT TRANSFER</b></a></li>
+                <li><a href="#hourly" data-toggle="tab"><i class="glyphicon glyphicon-time "></i> <b> HOURLY RENTAL</b> </a></li>
+                 <li><a href="#outstation" data-toggle="tab"><i class="glyphicon glyphicon-star "></i><b> OUTSTATION</b> </a></li>
+                
+            </ul>
+              
+ <div class="panel-body" style="background:#434343;">   <div class="tab-content">
+ <!---Point to point start--->
+   <div class="tab-pane fade in active" id="point">
+            <br>
+      <div class="col-md-6">
+        <div class="form-group">
+ <label >PIKUP AREA</label>
+  <input type="text" class="form-control" >
+</div>
+  </div>
+  
+   <div class="col-md-6">
+        <div class="form-group">
+ <label >DROP AREA</label>
+  <input type="text" class="form-control" >
+</div>
+  </div>
+   
+          <div class="col-md-6">      
+             <form class="form-group">                   
+                     <div class="form-group">
+                     <label >PIKUP DATE</label>
+                        <input type="text"     id="birthday" class="form-control" value="03/18/2013" /> 
+                     </div>
+               </form>
+
+               <script type="text/javascript">
+               $(document).ready(function() {
+                  $('#birthday').daterangepicker({ singleDatePicker: true }, function(start, end, label) {
+                    console.log(start.toISOString(), end.toISOString(), label);
+                  });
+               });
+               </script>
+      </div>
+    
+    
+  
+  
+  <div class="col-md-6">      
+             <form class="form-group">                   
+                     <div class="form-group">
+                     <label >PIKUP TIME</label>
+                    <select class="form-control">
+  <option>Select Time</option>
+  <option>08:30 am</option>
+  <option>09:30 am</option>
+  <option>10:30 am</option>
+  <option>11:30 am</option>
+</select>
+                         
+                     </div>
+               </form>
+ 
+      </div>
+      
+      
+       <div class="btn-toolbar text-right">
+              <a href="#" role="button" class="btn btn-danger btn-lg">FIND MY TAXI</a>
+            </div>
+        			 
+     </div><!--point to point end--->
+     
+     <!--Airport search start-->
+ <div class="tab-pane fade text-justify" id="airport">
+				 <br>
+	 <div class="col-md-12">
+      
+        <div class="form-group">
+ <label >GOING TO AIRPORT</label>
+  <input type="text" class="form-control" placeholder="Select Airport">
+</div>
+ 
+  </div>
+      <br><br> 
+             <div class="col-md-6">      
+             <form class="form-group">                   
+                     <div class="form-group">
+                     <label >PICKUP DATE</label>
+                        <input type="text"     id="birthday2" class="form-control" value="03/18/2013" /> 
+                     </div>
+               </form>
+
+               <script type="text/javascript">
+               $(document).ready(function() {
+                  $('#birthday2').daterangepicker({ singleDatePicker: true }, function(start, end, label) {
+                    console.log(start.toISOString(), end.toISOString(), label);
+                  });
+               });
+               </script>
+      </div>
+         <div class="col-md-6">      
+             <form class="form-group">                   
+                     <div class="form-group">
+                     <label >PICKUP AREA</label>
+                        <input type="text"   class="form-control" value="Enter City/Airport /Zip or Postal Code" /> 
+                     </div>
+               </form>
+
+                
+      </div>
+      
+      <br><br>
+      
+       
+        <div class="col-md-6">
+        <div class="form-group">
+    <label for="exampleInputPassword1">Adults:</label>
+    <select class="form-control">
+  <option>0</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  <option>6</option>
+  <option>7</option>
+  <option>8</option>
+  <option>9</option>
+</select>
+  </div>
+       </div> 
+       
+        <div class="col-md-6">
+        <div class="form-group">
+    <label for="exampleInputPassword1">Children:</label>
+    <select class="form-control">
+  <option>0</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  <option>6</option>
+  <option>7</option>
+  <option>8</option>
+  <option>9</option>
+</select>
+  </div>
+       </div>
+      <div class="btn-toolbar text-right">
+              <a href="#" role="button" class="btn btn-danger btn-lg">Search Now</a>
+            </div>
+                </div>
+                <!---Airport search end--->
+                
+                <div class="tab-pane fade" id="hourly">
+                <br>
+			 <div class="col-md-6">
+              <div class="form-group">
+ <label >PACKAGE</label>
+ <select class="form-control">
+  <option>SELECT</option>
+  <option>2hrs 20Kms</option>
+  <option>4hrs 40Kms</option>
+  <option>6hrs 80Kms</option>
+  <option>12hrs 120Kms</option>
+  
+</select>
+</div>        
+  </div>
+     
+      
+      <div class="col-md-6">      
+             <form class="form-group">                   
+                     <div class="form-group">
+                     <label >PICKUP AREA</label>
+                        <input type="text"  class="form-control" value="Enter City/Airport /Zip or Postal Code" /> 
+                     </div>
+               </form>
+ 
+      </div>
+        <div class="col-md-6">      
+             <form class="form-group">                   
+                     <div class="form-group">
+                     <label >PICKUP DATE</label>
+                        <input type="text"     id="birthday5" class="form-control" value="03/18/2013" /> 
+                     </div>
+               </form>
+
+               <script type="text/javascript">
+               $(document).ready(function() {
+                  $('#birthday5').daterangepicker({ singleDatePicker: true }, function(start, end, label) {
+                    console.log(start.toISOString(), end.toISOString(), label);
+                  });
+               });
+               </script>
+      </div>
+   
+       <div class="col-md-6">
+        <div class="form-group">
+     <label>PICKUP TIME</label>
+    <select class="form-control">
+  <option>9 : 00</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  <option>6</option>
+  <option>7</option>
+  <option>8</option>
+  <option>9</option>
+</select>
+  </div>
+       </div>
+      
+     
+      
+       <div class="btn-toolbar text-right">
+              <a href="#" role="button" class="btn btn-success btn-lg">Search Now</a>
+            </div>
+      </div> 
+      
+      
+        <div class="tab-pane fade" id="outstation">
+                <br>
+ 
+      <div class="col-md-6">      
+             <form class="form-group">                   
+                     <div class="form-group">
+                     <label >TO</label>
+                        <input type="text"  class="form-control" value="Enter City/Airport /Zip or Postal Code" /> 
+                     </div>
+               </form>
+ 
+      </div>
+      
+       <div class="col-md-6">      
+        <form class="form-group" style="margin-top:25px;">                  <div class="btn-group" role="group" aria-label="...">
+  <button type="button" class="btn btn-default">ONE WAY TRIP</button>
+  <button type="button" class="btn btn-info">ROUND TRIP</button>
+  
+</div>
+               </form>
+ 
+      </div>
+      
+        <div class="col-md-6">      
+             <form class="form-group">                   
+                     <div class="form-group">
+                     <label >PICKUP DATE</label>
+                        <input type="text"     id="birthday6" class="form-control" value="03/18/2013" /> 
+                     </div>
+               </form>
+
+               <script type="text/javascript">
+               $(document).ready(function() {
+                  $('#birthday6').daterangepicker({ singleDatePicker: true }, function(start, end, label) {
+                    console.log(start.toISOString(), end.toISOString(), label);
+                  });
+               });
+               </script>
+      </div>
+      
+       <div class="col-md-6">      
+             <form class="form-group">                   
+                     <div class="form-group">
+                     <label >RETURN DATE</label>
+                        <input type="text"     id="birthday7" class="form-control" value="03/18/2013" /> 
+                     </div>
+               </form>
+
+               <script type="text/javascript">
+               $(document).ready(function() {
+                  $('#birthday7').daterangepicker({ singleDatePicker: true }, function(start, end, label) {
+                    console.log(start.toISOString(), end.toISOString(), label);
+                  });
+               });
+               </script>
+      </div>
+   
+       
+      
+       <div class="btn-toolbar text-right">
+              <a href="#" role="button" class="btn btn-success btn-lg">Search Now</a>
+            </div>
+      </div> 
+       
+            </div>
+			<!--End Tabs here-->
+	
+
+			   </div>
+               </div>
+            </div>
+            
+            <!--==============search panel end==============---->
+ <div class="col-md-4 text-center" style="color:#F5F3F3;">
+ <img class="img-responsive" src="images/actexi-banner3.jpg">
+  </div>
+</div><!--container end-->
+<p>
+<div class="container"><p>
+<div class="col-md-4">  <a href=""><img class="img-responsive" src="images/banner2.jpg"></a></div><p>
+  <div class="col-md-4"><a href=""> <img class="img-responsive" src="images/banner3.png"></a></div><p>
+   <div class="col-md-4"><a href=""> <img class="img-responsive" src="images/banner5.png"></a></div><p>
+    
+</div>
+
+</div> <!--well end-->
+ 
+ 
+   <!-- innova car start -->
+  <div class="container-fluid jumbotron" style="background:#f5c34c;">
+    <div class="col-md-8">
+     <img class="img-responsive" src="images/banner4.png">
+    </div>
+     <div class="col-md-4 jumbotron text-center">
+       <h3>THE LARGEST TAXI SERVICES</h3>
+       <h1>TAXI <i class="text-success">HIRE</i></h1>
+       <div class="col-md-12" >
+       <div class="form-group" >
+        <button type="button" class="btn btn-lg btn-info btn-block" >WHAT WE DO ?</button>
+        </div>
+        <div class="form-group">
+        <button type="button" class="btn btn-lg btn-info btn-block" > JOIN US</button>
+        </div>
+         </div>
+        </div>
+    
+     </div>
+    <!-- innova car end -->   
+ 
+     
+ 
+ <div class="well jumbotron" style="background:#f5c34c;">
+ <div class="container-fluid" align="center">
+ <div class="row">
+       <div class="col-lg-4 col-md-6 col-sm-6 ">
+       <br><br><br>
+           <h2>It's New and It's Everywhere!</h2>
+                    
+                        <small><b>India’s quickest and most convenient way to book and track a taxi cab is here. Download the free TaxiForSure app NOW and have your city’s taxis at your fingertips anywhere, anytime! We promise a great booking experience and a smarter way to travel.</b></smaill>
+         <p><u>Get TaxiForSure on your mobile.</u></p>
+                <div class="input-group">
+  <span class="input-group-addon" style="background:#f09401; color:#FFFFFF;">+91</span>
+  <input type="text" class="form-control">
+  <span class="input-group-addon" style="background:#f09401; color:#FFFFFF;"><a href="">SEND ME THE LINK !</a></span>
+</div>   
+</div>
+                <P> 
+                <div class="col-md-8 ">
+                    <img class="img-responsive" src="images/app.png">
+                </div>
+               </div>
+         <br><br>
+       <!-- /.row -->
+     </div>
+        <!-- /.container -->
+ </div>
+  
+    
+       <!-- Testimonial start -->
+        <div class="well jumbotron" style="background:#f5c34c; border:#4C4D4F; color:#41403f;">
+        <div class="text-center"><h1>Testimonial</h1></div>
+  <div class="row">
+ <div id="reviews" class="carousel slide" data-ride="carousel">
+
+        <div class="carousel-inner">
+           <div class="item active">
+  <div class="col-md-10 col-md-offset-1">
+ <h4><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit onec molestie non sem vel condimentum. <i class="fa fa-quote-right"></i></h4>
+       <div class="user-img pull-right">
+                           </div>
+   <h3 class="text-right text-danger"><strong >Tejinder Sohal</strong></h3>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="col-md-10 col-md-offset-1">
+
+                                                <h4><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit onec molestie non sem vel condimentum. <i class="fa fa-quote-right"></i>
+                                                </h4>
+                                                <div class="user-img pull-right">
+          
+                                                </div>
+                                                <h3 class="text-right text-danger"><strong > Deepak Kundra</strong></h3>
+                                            </div>
+
+                                        </div>
+                                        <div class="item">
+                                            <div class="col-md-10 col-md-offset-1">
+
+                                                <h4><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipiscing  Lorem ipsum dolor sit amet, consectetur adipiscing elit onec molestie non sem vel condimentum. <i class="fa fa-quote-right"></i></h4>
+                                                <div class="user-img pull-right">
+                                        
+                                                </div>
+                                                <h3 class="text-right text-danger"><strong >Amit Pruthi</strong></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--INDICATORS- 
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#reviews" data-slide-to="0" class="active"></li>
+                                        <li data-target="#reviews" data-slide-to="1"></li>
+                                        <li data-target="#reviews" data-slide-to="2"></li>
+                                    </ol>
+                                    <!--PREVIUS-NEXT BUTTONS-->
+
+               </div>
+               
+            </div>
+        </div>
+         <!-- Testimonial start end-->
+
+ <div class="section-colored">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Taxi in Chandigarh</h2>
+                    <ul>
+                        <li>Book a taxi in Chandigarh online or call us on (0172) 6060 101.</li>
+                        <li>You can also book a Chandigarh taxi through the TaxiForSure ™ mobile app on your smartphone.</li>
+                        <li>Book our Chandigarh cabs at reasonable rates.</li>
+                        <li>TaxiForSure ™ is considered one of the most reliable taxi services in Chandigarh.</li>
+                        <li>We also offer services for Car Hire in Chandigarh, and Car Rental in Chandigarh at the best rates.</li>
+                        <li>With over 3,000,000+ rides delivered, we have the experience to deliver what it takes.</li>
+                        <li>Try TaxiForSure for the most reliable and affordable cab service in Chandigarh.</li>
+                        <li>Our Chandigarh taxis are available in convenient packages and suited to your travel needs.</li>
+                        <li>No prior payment is required to book our radio taxis in Chandigarh online. Book now and pay later.</li>
+                        <li>We offer you multiple Chandigarh Car choices - Indica, Innova, Sedans, AC cabs, Non-AC cabs for your travel to and from Chandigarh.</li>
+                    </ul>
+                </div>
+                
+            </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.section-colored -->
+
+
+<br><br>
+         <!-- Footer -->
+ <div class="well text-center lead" style="background:#f5c34c;">
+     <p><b>TaxiForSure has serviced more than <abbr title="7,00,000 Clients">7,00,000</abbr> customers across India.</b></p>
+        </div>
+  
+    
+      <div class="container-fluid" >
+        <div class="container">
+         <div class="footer">
+      <div class="form-group">
+        <center><span><a href="index.html">Home </a>I <a href="about.html">About</a> I Terms and Conditions I Privacy Policy I Disclaimer I <a href="contact.html">Contact</a> I <a href="feedback.html">Feedback</a>  </span></center>
+                 
+      </div>
+    </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" align="center">
+    Website Design & Develop by <a href=""><strong>www.researchwebtech.com</strong></a>
+    </div>
+   
+    <!-- /.container -->
+
+    <!-- jQuery Version 1.11.0 -->
+  
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+   
+    
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+    
+     <!--Back To Top-->
+    <script>
+    $(document).ready(function(){
+      $('body').append('<div id="toTop" class="btn btn-info"><span class="glyphicon glyphicon-chevron-up gly-spin"></span> </div>');
+    	$(window).scroll(function () {
+			if ($(this).scrollTop() != 0) {
+				$('#toTop').fadeIn();
+			} else {
+				$('#toTop').fadeOut();
+			}
+		}); 
+    $('#toTop').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+});
+</script>
+<style>
+#toTop{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	cursor: pointer;
+	display: none;
+}
+</style>
+ <!--Back To Top End-->
+</body>
+
+</html>

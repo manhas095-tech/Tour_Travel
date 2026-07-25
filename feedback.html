@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Feedback</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/bootstrap.css" rel="stylesheet">
+     
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+<script type="text/javascript" src="js/reservation.js"></script>
+       <link href="css/daterangepicker-bs2.css" rel="stylesheet">
+      <script type="text/javascript" src="js/moment.js"></script>
+      <script type="text/javascript" src="js/daterangepicker.js"></script>
+   
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+
+   
+<div class="container">
+ <div class="col-md-3"><img class="img-responsive" src="images/logo.png"></div>
+ 
+  <div class="col-md-3" align="center">
+    <a href=""><img  class="img-responsive" src="images/booknow.png"></a>
+  </div>
+  <div class="col-md-3"><img class="img-responsive" src="images/banner2.png">
+  
+  </div>
+  <p>
+   <div class="col-md-3" align="center">
+    <button class="btn btn-info lead" style="color:#F8F3F3;"><h5> <i class="fa fa-phone fa-3x gly-spin"></i></h5>&nbsp; Call Back</button>
+        
+    <button class="btn btn-info gly-spin1" style="color:#F8F3F3;"><h5><i class="fa fa-user fa-3x  "></i> </h5>&nbsp;Login / Register</button>
+   
+   </div>
+</div>
+
+    
+    
+    
+   <br>
+   
+   <!-- Page Content -->
+    <div class="container" style="border-top:5px solid #f09401;">
+ <!-- Page Heading/Breadcrumbs -->
+        <br>
+       <div class="row">
+            <div class="col-lg-12">
+                 <ol class="breadcrumb">
+                    <li><a href="index.html">Home</a>
+                    </li>
+                    <li class="active">Feedback</li>
+                </ol>
+            </div>
+        </div>
+    <!-- /.row -->
+ 
+  </div>
+    <!-- /.container -->
+ <div class="container">
+    <div class="row"><br><br>
+        <div class="col-md-12">
+            <div class="well well-sm">
+                <form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">
+                                Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">
+                                Email Address</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                </span>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+                        </div>
+                        <div class="form-group">
+                 <div class="checkbox">
+    <label>
+      <input type="checkbox"> good
+    </label>
+    <label>
+      <input type="checkbox"> very good
+    </label>
+    <label>
+      <input type="checkbox"> excellent
+    </label>
+  </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">
+                                Description</label>
+                            <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+                                placeholder="Description"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-info pull-right" id="btnContactUs">
+                            Send Message</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+       
+    </div>
+</div>
+  <br><br>
+    <!-- Footer -->
+ <div class="well text-center lead" style="background:#f5c34c;">
+     <p><b>TaxiForSure has serviced more than <abbr title="7,00,000 Clients">7,00,000</abbr> customers across India.</b></p>
+        </div>
+  
+    
+      <div class="container-fluid" >
+        <div class="container">
+         <div class="footer">
+      <div class="form-group">
+          <center><span><a href="index.html">Home </a>I <a href="about.html">About</a> I Terms and Conditions I Privacy Policy I Disclaimer I <a href="contact.html">Contact</a> I <a href="feedback.html">Feedback</a> </span></center>
+                 
+      </div>
+    </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" align="center">
+    Website Design & Develop by <a href=""><strong>www.researchwebtech.com</strong></a>
+    </div>
+   
+    <!-- /.container -->
+
+    <!-- jQuery Version 1.11.0 -->
+  
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+   
+    
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+    
+     <!--Back To Top-->
+    <script>
+    $(document).ready(function(){
+      $('body').append('<div id="toTop" class="btn btn-info"><span class="glyphicon glyphicon-chevron-up gly-spin"></span> </div>');
+    	$(window).scroll(function () {
+			if ($(this).scrollTop() != 0) {
+				$('#toTop').fadeIn();
+			} else {
+				$('#toTop').fadeOut();
+			}
+		}); 
+    $('#toTop').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+});
+</script>
+<style>
+#toTop{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	cursor: pointer;
+	display: none;
+}
+</style>
+ <!--Back To Top End-->
+</body>
+
+</html>

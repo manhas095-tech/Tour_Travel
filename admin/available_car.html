@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Available Car</title>
+		<meta name="generator" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/bootstrap.css" rel="stylesheet">
+        <link href="../css/modern-business.css" rel="stylesheet">
+		 
+		 
+	</head>
+	<body style="padding-top:65px; background:#fff;">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background:#464445;">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+        </div>
+        <div class="navbar-collapse collapse">
+           <ul class="nav navbar-nav navbar-left">
+             <li><a href="car_list.html">View Cars</a></li>
+              <li ><a href="member_list.html">View Users</a></li>
+             <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">View<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="driver_list.html">Driver List</a></li>
+            <li class="divider"></li>
+            <li><a href="vendor.html">Vendor</a></li>
+              <li class="divider"></li>
+            <li><a href="take_booking.html">Take Vendor Booking</a></li>
+              <li class="divider"></li>
+             <li><a href="give_booking.html">Give Vendor Booking</a></li>
+          </ul>
+        </li>
+            <li><a href="booking_system.html">Booking System</a></li>
+              <li class="active"><a href="available_car.html">Available Cars</a></li>
+              <li><a href="View_cities.html">View Cities</a></li>
+             
+              <li><a href="View_staff.html">View Staff</a></li>
+              <li><a href="hourly_rental.html">Hourly Rental</a></li>
+            
+          </ul>
+          <!--<form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>-->
+        </div>
+      </div>
+</nav>
+ 
+          <!--Driver modal-->
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 class="text-center">ADD NEW CAR</h3>
+      </div>
+      <div class="modal-body">
+          <form class="form">
+           <div class="form-group">
+           <label>Source Name</label>
+              <input type="text" class="form-control" >
+            </div>
+            <div class="form-group">
+            <label>Destination</label>
+              <input type="text" class="form-control" >
+            </div>
+              <div class="form-group">
+              <label>Price</label>
+              <input type="text" class="form-control" >
+            </div>
+              <div class="form-group">
+              <label>Car Name</label>
+              <input type="text" class="form-control">
+            </div>
+           
+            <div class="form-group">
+              <button class="btn btn-info btn-lg btn-block">ADD</button>
+              
+            </div>
+          </form>
+      </div>
+      <div class="modal-footer">
+          <div class="col-md-12">
+          
+          <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true"><i class="glyphicon glyphicon-remove"></i> Cancel</button>
+		  </div>	
+      </div>
+  </div>
+  </div>
+</div><!--driver modal end-->
+   <div class="well">
+		  
+           <button class="btn btn-info" data-toggle="modal" data-target="#myModal" style="color:#F8F3F3;"> ADD NEW CAR</button>
+          <form class="navbar-form navbar-right" role="search">
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Search by Car">
+  </div>
+  <button class="btn btn-info">Search</button>
+</form>
+           
+   </div>
+
+<style>.table-responsive
+{
+    overflow-x: auto;
+}</style>
+       <div class="container-fluid">
+         <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <tr class="danger">
+                  <th>Source Name</th>
+                  <th>Destination</th>
+                  <th>Price</th>
+                  <th>Car Name </th>
+                   <th>Edit</th>
+                  <th>Enable</th>
+                  <th>Delete</th>
+                  
+                </tr>
+              </thead>
+              <tbody>
+               <tr class="warning">
+                <td>Chandigarh</td>
+                <td> Sco 60 top floor sector 40 c Chandigarh</td>
+                 <td>8,000 </td>
+                  <td>Toyota Innova</td>
+                   <td><button type="button" class="btn btn-success btn-xs">Edit</button></td>
+                    <td><button type="button" class="btn btn-danger btn-xs">Disable</button></td>
+                    <td align="center"><button type="button" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-remove"></i></button></td>
+                </tr>
+             </tbody>
+              <tbody>
+               <tr class="warning">
+                <td>Chandigarh</td>
+                <td> Sco 60 top floor sector 40 c Chandigarh</td>
+                 <td>8,000 </td>
+                  <td>Toyota Innova</td>
+                   <td><button type="button" class="btn btn-success btn-xs">Edit</button></td>
+                    <td><button type="button" class="btn btn-danger btn-xs">Disable</button></td>
+                    <td align="center"><button type="button" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-remove"></i></button></td>
+                </tr>
+             </tbody>
+              <tbody>
+               <tr class="warning">
+                <td>Chandigarh</td>
+                <td> Sco 60 top floor sector 40 c Chandigarh</td>
+                 <td>8,000 </td>
+                  <td>Toyota Innova</td>
+                   <td><button type="button" class="btn btn-success btn-xs">Edit</button></td>
+                    <td><button type="button" class="btn btn-danger btn-xs">Disable</button></td>
+                    <td align="center"><button type="button" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-remove"></i></button></td>
+                </tr>
+             </tbody>
+              <tbody>
+               <tr class="warning">
+                <td>Chandigarh</td>
+                <td> Sco 60 top floor sector 40 c Chandigarh</td>
+                 <td>8,000 </td>
+                  <td>Toyota Innova</td>
+                   <td><button type="button" class="btn btn-success btn-xs">Edit</button></td>
+                    <td><button type="button" class="btn btn-danger btn-xs">Disable</button></td>
+                    <td align="center"><button type="button" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-remove"></i></button></td>
+                </tr>
+             </tbody>
+              <tbody>
+               <tr class="warning">
+                <td>Chandigarh</td>
+                <td> Sco 60 top floor sector 40 c Chandigarh</td>
+                 <td>8,000 </td>
+                  <td>Toyota Innova</td>
+                   <td><button type="button" class="btn btn-success btn-xs">Edit</button></td>
+                    <td><button type="button" class="btn btn-danger btn-xs">Disable</button></td>
+                    <td align="center"><button type="button" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-remove"></i></button></td>
+                </tr>
+             </tbody>
+              <tbody>
+               <tr class="warning">
+                <td>Chandigarh</td>
+                <td> Sco 60 top floor sector 40 c Chandigarh</td>
+                 <td>8,000 </td>
+                  <td>Toyota Innova</td>
+                   <td><button type="button" class="btn btn-success btn-xs">Edit</button></td>
+                    <td><button type="button" class="btn btn-danger btn-xs">Disable</button></td>
+                    <td align="center"><button type="button" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-remove"></i></button></td>
+                </tr>
+             </tbody>
+              <tbody>
+               <tr class="warning">
+                <td>Chandigarh</td>
+                <td> Sco 60 top floor sector 40 c Chandigarh</td>
+                 <td>8,000 </td>
+                  <td>Toyota Innova</td>
+                   <td><button type="button" class="btn btn-success btn-xs">Edit</button></td>
+                    <td><button type="button" class="btn btn-danger btn-xs">Disable</button></td>
+                    <td align="center"><button type="button" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-remove"></i></button></td>
+                </tr>
+             </tbody>
+               
+             
+             
+            </table>
+          </div>
+        </div>
+    
+ 
+        
+	<!-- script references -->
+		<script src="../js/sidebar-admin.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<script src="../js/scripts.js"></script>
+	</body>
+</html>
